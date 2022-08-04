@@ -6,5 +6,14 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rocket = { version = "0.5.0-rc.2", features = ["json"] }
+rocket = { version = "0.4.11" }
 serde = { version = "1.0", features = ["derive"] }
+diesel = { version = "1.4", features = ["postgres"] }
+
+[dependencies.serde_derive]
+version = "1.0"
+
+[dependencies.rocket_contrib]
+version = "0.4"
+default-features = false
+features = ["json", "diesel_postgres_pool"]

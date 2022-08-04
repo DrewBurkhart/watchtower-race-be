@@ -1,2 +1,5 @@
-[default]
+[development]
 port = 8081
+
+[development.databases]
+postgres = { url = "postgres://postgres:postgres@localhost:5433/postgres"}
